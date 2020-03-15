@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <style type="text/css">
+
+        @font-face {
+            font-family: mj;
+            src: url('fonts/Mj flow.ttf');
+        }
+
+        @font-face {
+            font-family: tul;
+            src: url('fonts/Thuluth.ttf');
+        }
+
+        @font-face {
+            font-family: mitra;
+            src: url('fonts/Mitra.ttf');
+        }
+
+        body{
+            margin:0;
+            font-family:mj;
+            color:#333;
+        }
+
+        #header{
+            border:1px solid #ccc;
+            background:linear-gradient(#fff,#ddd);
+            box-shadow:0 0 10px 1px #ccc;
+            height:100px;
+
+            position:relative;
+            z-index:20;
+        }
+
+        #content {
+            border-top:1px solid transparent;
+            background: url('images/01 bg.png') repeat-x;
+            height:700px;
+        }
+
+        #content > .holder{
+            width:500px;
+            margin:20px auto;
+            direction:rtl;
+        }
+
+
+        #content > .holder > .center {
+            width: 100%;
+            background:rgba(240,240,240,1);
+            border-radius:3px;
+            padding:7px;
+        }
+
+        #form {
+            padding-bottom:30px;
+            background: #fff;
+            margin: 3px;
+        }
+
+        #form > .logo {
+            width:110px;
+            display:block;
+            margin:40px auto;
+        }
+
+        #form > .items {
+            background: rgba(240,240,240,1);
+            width: 80%;
+            margin: 10px 60px;
+            padding: 3px;
+        }
+            
+        #form > .items > .title{
+            color:#fff;
+            width:60px;
+            display:inline-block;
+            text-align:center;
+            background: rgba(220,220,220,1);
+            border-radius: 3px;
+            padding: 3px 5px;
+        }
+        
+        #form > .items > input {
+            border: 0 none;
+            background: #fff;
+            width: 80%;
+            height: 40px;
+            font-family: mitra;
+            font-size: 19px;
+            text-indent: 20px;
+        }
+        
+        #form > .items > input[type=submit] {
+            cursor:pointer;
+            background:rgba(245,245,245,1);
+            border:0 none;
+            height:40px;
+            display: block;
+            margin: 2px auto;
+            width: 90%;
+        }
+
+        #form > a {
+            display:block;
+            text-align:center;
+            text-decoration:none;
+            color:red;
+            margin-top:30px;
+        }
+
+
+        #form > h2 {
+            background: rgba(240,240,240,1);
+            font-family: tul;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            color: #555;
+            font-size: 22px;
+            padding: 10px 0;
+            border-radius: 0 0 100% 100%;
+        }  
+
+        #content, #content > .holder,
+        #content > .holder > .center {
+            height: auto;
+            overflow: hidden;
+        }
+
+        #form > .items > img {
+            width: 100%;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <form>
+
+    <div id="header"></div>
+    <div id="content">
+
+        <div class="holder">
+
+
+            <div class="center">
+                <div id="form">
+                    <h2>  ثبت نام  </h2>
+
+                    <img class="logo" src="images/314o.png" /> 
+
+                    <div class="items">
+                        <span class="title"> نام کاربری </span>
+                        <input type="text" placeholder="فارسی یا لاتین وارد شود . . ." />
+                    </div>
+
+                    <div class="items">
+                        <span class="title">رمز ورود </span>
+                        <input type="password" placeholder="با طول حداقل 8  . . . " />
+                    </div>
+
+                    <div class="items">
+                        <input type="submit" value="ورود"/>
+                    </div>
+
+                    <a href="#"> ثبت نام </a>
+                 
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footer"></div>
+
+    </form>
+
+</body>
+</html>
